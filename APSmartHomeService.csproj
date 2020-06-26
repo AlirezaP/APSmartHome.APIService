@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>07a537ec-9df5-4092-98cf-9d8bc99416b5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MQTTnet" Version="3.0.11" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.6.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APSmartHomeService.Business\APSmartHomeService.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PData\Sk\" />
+  </ItemGroup>
+
+
+</Project>
